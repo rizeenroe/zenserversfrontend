@@ -7,7 +7,7 @@ function App() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-  fetch('http://localhost:3001/api/mc-status')
+  fetch('https://zenserversbackend.vercel.app/')
     .then((res) => res.json())
     .then(data => {
       console.log(data); 
